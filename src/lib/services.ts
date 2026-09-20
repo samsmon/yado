@@ -40,14 +40,14 @@ export const services: ServiceDef[] = [
     description:
       "Centralized OAuth2 identity provider securing all services in the Yado network.",
     url: process.env.NEXT_PUBLIC_SSO_URL ?? "https://sso.yado.my.id",
-    repo: "https://github.com/srytmj/sso.yado",
+    repo: "https://github.com/samsmon/sso.yado",
     category: "Identity",
     lifecycle: "production",
     version: "v1.2.4",
     iconName: "ShieldCheck",
     quickLinks: [
       { label: "Portal", url: "https://sso.yado.my.id" },
-      { label: "Docs", url: "https://github.com/srytmj/sso.yado#readme" },
+      { label: "Docs", url: "https://github.com/samsmon/sso.yado#readme" },
     ],
   },
   {
@@ -57,14 +57,14 @@ export const services: ServiceDef[] = [
     description:
       "Core backend service for media catalog indexing, reading workflows, and data orchestration.",
     url: process.env.NEXT_PUBLIC_MALAS_URL ?? "https://malas.yado.my.id",
-    repo: "https://github.com/srytmj/malas",
+    repo: "https://github.com/samsmon/malas",
     category: "Core",
     lifecycle: "production",
     version: "v1.0.0",
     iconName: "Sparkles",
     quickLinks: [
       { label: "Launch", url: "https://malas.yado.my.id" },
-      { label: "API", url: "https://github.com/srytmj/malas#api" },
+      { label: "API", url: "https://github.com/samsmon/malas#api" },
     ],
   },
   {
@@ -74,7 +74,7 @@ export const services: ServiceDef[] = [
     description:
       "Digital reading engine and visual inspector for manga, EPUB, and signal archives.",
     url: "#",
-    repo: "https://github.com/srytmj/yado",
+    repo: "https://github.com/samsmon/yado",
     category: "Reader",
     lifecycle: "development",
     version: "v0.4.0-alpha",
@@ -82,7 +82,7 @@ export const services: ServiceDef[] = [
     iconName: "BookOpen",
     quickLinks: [
       { label: "Docs", url: "/docs" },
-      { label: "Roadmap", url: "https://github.com/srytmj/yado/tree/main/docs" },
+      { label: "Roadmap", url: "https://github.com/samsmon/yado/tree/main/docs" },
     ],
   },
   {
@@ -92,7 +92,7 @@ export const services: ServiceDef[] = [
     description:
       "Automated uptime tracking, response latency, and service availability monitors.",
     url: "#status",
-    repo: "https://github.com/srytmj/yado",
+    repo: "https://github.com/samsmon/yado",
     category: "DevTools",
     lifecycle: "staging",
     version: "v0.9.1-rc",

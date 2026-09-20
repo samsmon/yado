@@ -91,8 +91,8 @@ export default function DocsPage() {
                     <span className="border border-moss/30 bg-moss-soft px-2 py-0.5 font-mono text-[11px] text-moss">Live</span>
                   </td>
                   <td className="p-4">
-                    <a href="https://github.com/srytmj/sso.yado" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-foreground/50 hover:text-foreground">
-                      srytmj/sso <ExternalLink className="h-3 w-3" strokeWidth={1.5} />
+                    <a href="https://github.com/samsmon/sso.yado" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-foreground/50 hover:text-foreground">
+                      samsmon/sso <ExternalLink className="h-3 w-3" strokeWidth={1.5} />
                     </a>
                   </td>
                 </tr>
@@ -106,8 +106,8 @@ export default function DocsPage() {
                     <span className="border border-moss/30 bg-moss-soft px-2 py-0.5 font-mono text-[11px] text-moss">Live</span>
                   </td>
                   <td className="p-4">
-                    <a href="https://github.com/srytmj/malas" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-foreground/50 hover:text-foreground">
-                      srytmj/malas <ExternalLink className="h-3 w-3" strokeWidth={1.5} />
+                    <a href="https://github.com/samsmon/malas" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-foreground/50 hover:text-foreground">
+                      samsmon/malas <ExternalLink className="h-3 w-3" strokeWidth={1.5} />
                     </a>
                   </td>
                 </tr>
@@ -120,7 +120,7 @@ export default function DocsPage() {
                   <td className="p-4">
                     <span className="border border-ochre/30 bg-ochre-soft px-2 py-0.5 font-mono text-[11px] text-ochre">Draft / RFC</span>
                   </td>
-                  <td className="p-4 font-mono text-foreground/40">srytmj/libs</td>
+                  <td className="p-4 font-mono text-foreground/40">samsmon/libs</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-medium text-foreground flex items-center gap-2">
@@ -131,7 +131,7 @@ export default function DocsPage() {
                   <td className="p-4">
                     <span className="border border-indigo/30 bg-indigo-soft px-2 py-0.5 font-mono text-[11px] text-indigo">Development</span>
                   </td>
-                  <td className="p-4 font-mono text-foreground/40">srytmj/pore.js</td>
+                  <td className="p-4 font-mono text-foreground/40">samsmon/pore.js</td>
                 </tr>
               </tbody>
             </table>
