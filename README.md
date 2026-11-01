@@ -1,6 +1,6 @@
 # Yado - Launcher, Telemetry & Mission Control
 
-Yado (宿) - artinya "penginapan/tempat singgah", tempat yang memberikan kesan "rumah buat koleksimu".
+Yado (宿) - meaning "inn / place to stop", a place that feels like "a home for your collection".
 
 Yado is the centralized portal, microservice launcher, and observability dashboard for the `*.yado.my.id` homelab network. Built with Next.js 16 (Turbopack), Tailwind CSS, Framer Motion, and Anime.js.
 
@@ -47,13 +47,13 @@ npm run incident:resolve -- --id="<inc-id>" --duration="<final duration>" --mess
 - **Timestamp Standard:** Always use UTC time format `HH:MM UTC` for update logs.
 
 ### 4. AI Prompting Examples & Expected Actions
-- **User:** *"malas tadi crash 20 menit gara-gara memory leak, tolong catat insidennya."*
+- **User:** *"malas just crashed for 20 minutes because of a memory leak, please log the incident."*
   &rarr; Execute:
   `npm run incident:create -- --title="Malas Memory Pressure Spike" --service="malas" --severity="minor" --duration="20 minutes" --message="Cache buffer memory exhaustion mitigated by restarting service."`
-- **User:** *"Besok jam 2 pagi ada maintenance ganti switch homelab 30 menit."*
+- **User:** *"Tomorrow at 2 AM there is a 30-minute maintenance window to swap the homelab switch."*
   &rarr; Execute:
   `npm run incident:create -- --title="Scheduled Network Switch Maintenance" --service="gateway" --severity="maintenance" --duration="30 minutes" --message="Upstream 2.5GbE switch firmware update and port re-wiring."`
-- **User:** *"Tolong resolve insiden libs kemarin."*
+- **User:** *"Please resolve yesterday's libs incident."*
   &rarr; Find ID using `npm run incident:list` then execute `npm run incident:resolve -- --id="<id>" --message="Resolved."`
 
 ---
@@ -64,7 +64,7 @@ You can manage telemetry, status bars, and maintenance notices through 3 flexibl
 
 ### Method A: Natural Language via AI (Fastest)
 Open **Claude Code**, **Gemini CLI**, or **Antigravity** in this repository and simply tell the AI:
-> *"SSO tadi sempat down 10 menit karena update database, tolong catat di telemetry."*
+> *"SSO was down for 10 minutes earlier because of a database update, please log it in telemetry."*
 
 The AI will read the protocol above, execute the script, format the logs, and update the status page automatically.
 

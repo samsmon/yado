@@ -10,17 +10,17 @@ This block is written and re-added by `next dev` - verify at `node_modules/next/
 
 ---
 
-# Standar Desain, Animasi, dan Konsistensi Yado
+# Yado Design, Animation, and Consistency Standards
 
-1. **Wajib Animasi Transisi Masuk:** Setiap halaman (`page.tsx`) dan seksi utama wajib menggunakan Framer Motion dengan pola stagger fade/slide-up (`[0.16, 1, 0.3, 1]`). Halaman dilarang muncul statis tanpa animasi.
-2. **Smooth Scrolling:** Navigasi ke ID anchor (`#services`, `#status`, dll.) wajib menggunakan `useLenis` (`lenis.scrollTo(...)`) agar transisi gulir berjalan halus tanpa kedipan.
-3. **Bahasa Anti-AI Slop:** Hindari kata marketing hiperbola dan emoji berlebihan. Gunakan istilah teknis ringkas dan lugas.
-4. **Tema Otomatis OS:** Tema mengikuti sistem operasi secara otomatis dengan transisi CSS warna yang halus.
-5. **Wajib Catat Changelog:** Setiap perubahan atau penambahan file wajib dicatat secara terperinci di `CHANGELOG.md`.
-6. **Protokol Telemetri & Log Insiden (AI Agent Rules):**
-   - File sumber data utama insiden berada di `src/data/incidents.json`.
-   - AI dilarang menulis format tanggal lokal yang ambigu; gunakan format standar UTC untuk updates timestamp (`HH:MM UTC`) dan format tanggal deskriptif (`Month DD, YYYY` atau `X days ago` / `Today (Month DD, YYYY)`).
-   - Jalankan helper script `node scripts/incident-cli.mjs [create|update|resolve|list]` atau edit `src/data/incidents.json` secara langsung dengan mematuhi schema TypeScript `IncidentRecord` di `src/lib/telemetry.ts`.
-   - Severity valid: `minor`, `major`, `maintenance`.
-   - Status investigasi valid: `Investigating`, `Identified`, `Monitoring`, `Resolved`, `Completed`.
-   - Validasi perubahan dengan menjalankan `npm run build` sebelum menyelesaikan tugas.
+1. **Mandatory entrance animation:** Every page (`page.tsx`) and major section must use Framer Motion with a staggered fade/slide-up pattern (`[0.16, 1, 0.3, 1]`). Pages must not appear statically without animation.
+2. **Smooth scrolling:** Navigation to anchor IDs (`#services`, `#status`, etc.) must use `useLenis` (`lenis.scrollTo(...)`) so scrolling is smooth and does not flicker.
+3. **Anti-AI-slop language:** Avoid hyperbolic marketing words and excessive emoji. Use concise, plain technical terms.
+4. **OS-driven theme:** The theme follows the operating system automatically, with a smooth CSS color transition.
+5. **Changelog is mandatory:** Every change or added file must be recorded in detail in `CHANGELOG.md`.
+6. **Telemetry and incident log protocol (AI agent rules):**
+   - The main incident data source is `src/data/incidents.json`.
+   - AI must not write ambiguous local date formats; use the standard UTC format for update timestamps (`HH:MM UTC`) and descriptive date formats (`Month DD, YYYY` or `X days ago` / `Today (Month DD, YYYY)`).
+   - Run the helper script `node scripts/incident-cli.mjs [create|update|resolve|list]` or edit `src/data/incidents.json` directly, following the TypeScript `IncidentRecord` schema in `src/lib/telemetry.ts`.
+   - Valid severities: `minor`, `major`, `maintenance`.
+   - Valid investigation statuses: `Investigating`, `Identified`, `Monitoring`, `Resolved`, `Completed`.
+   - Validate changes by running `npm run build` before finishing the task.

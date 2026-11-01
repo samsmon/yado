@@ -52,7 +52,7 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
-        {/* Kiri: Brand & Navigasi Halaman */}
+        {/* Left: Brand & page navigation */}
         <div className="flex items-center gap-10">
           <Link
             href="/"
@@ -76,7 +76,7 @@ export function Navbar() {
           </nav>
         </div>
 
-        {/* Kanan: Search Trigger, SSO Profile Widget, dan Theme Toggle */}
+        {/* Right: Search Trigger, SSO Profile Widget, and Theme Toggle */}
         <div className="flex items-center gap-3">
           <button
             onClick={openCommandPalette}
