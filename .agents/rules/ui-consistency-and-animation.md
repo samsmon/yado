@@ -1,12 +1,12 @@
-# Standar Desain, Animasi, dan Konsistensi Yado
+# Yado Design, Animation, and Consistency Standards
 
-Dokumen aturan ini wajib dipatuhi oleh setiap pengembang dan AI agent dalam membuat atau memodifikasi komponen dan halaman di proyek Yado.
+This rules document must be followed by every developer and AI agent when creating or modifying components and pages in the Yado project.
 
 ---
 
-## 1. Animasi Masuk Halaman & Komponen (Entrance Animation)
-- **Wajib Animasi Transisi:** Setiap halaman baru (`page.tsx`) dan seksi utama TIDAK BOLEH tampil secara statis atau mendadak.
-- **Implementasi:** Gunakan `framer-motion` dengan konfigurasi standar:
+## 1. Page and Component Entrance Animation
+- **Transition animation required:** Every new page (`page.tsx`) and major section MUST NOT appear statically or abruptly.
+- **Implementation:** Use `framer-motion` with the standard configuration:
   - Container:
     ```tsx
     const container = {
@@ -29,18 +29,18 @@ Dokumen aturan ini wajib dipatuhi oleh setiap pengembang dan AI agent dalam memb
     };
     ```
 
-## 2. Navigasi & Smooth Scrolling
-- Navigasi anchor horizontal maupun vertikal (`#services`, `#status`, dll.) **wajib menggunakan smooth scrolling** via engine `useLenis` (`lenis.scrollTo(...)`). Dilarang keras menggunakan *hard jump* yang menyebabkan kedipan (blink) atau sentakan layar.
-- Navigasi antar halaman wajib menggunakan komponen `<Link>` dari `next/link`.
+## 2. Navigation and Smooth Scrolling
+- Horizontal and vertical anchor navigation (`#services`, `#status`, etc.) **must use smooth scrolling** via the `useLenis` engine (`lenis.scrollTo(...)`). Hard jumps that cause blinking or screen jerks are strictly forbidden.
+- Navigation between pages must use the `<Link>` component from `next/link`.
 
-## 3. Gaya Bahasa & Anti-AI Slop
-- Dilarang menggunakan kalimat marketing klise AI (misal: *powerhouse*, *seamless*, *cutting-edge*, *revolutionary*).
-- Gunakan bahasa yang ringkas, teknis, objektif, dan natural.
-- Hindari penggunaan deretan emoji dekoratif yang berlebihan.
+## 3. Language Style and Anti-AI Slop
+- Do not use cliched AI marketing phrases (e.g. *powerhouse*, *seamless*, *cutting-edge*, *revolutionary*).
+- Use concise, technical, objective, natural language.
+- Avoid rows of decorative emoji.
 
-## 4. Tema Sistem
-- Tema aplikasi terkunci otomatis mengikuti preferensi sistem operasi pengguna (OS Dark/Light mode).
-- Seluruh elemen layout wajib memiliki CSS transition yang halus (`0.4s cubic-bezier(0.16, 1, 0.3, 1)`) agar pergantian warna latar dan border tidak terjadi secara mendadak.
+## 4. System Theme
+- The app theme is locked to follow the user's operating system preference (OS dark/light mode).
+- All layout elements must have a smooth CSS transition (`0.4s cubic-bezier(0.16, 1, 0.3, 1)`) so background and border color changes do not happen abruptly.
 
-## 5. Dokumentasi Perubahan Wajib (Changelog)
-- Setiap modifikasi atau penambahan file baru wajib didokumentasikan di `CHANGELOG.md` lengkap dengan nomor versi, nama file yang disentuh, dan penjelasan teknis perubahan.
+## 5. Mandatory Change Documentation (Changelog)
+- Every modification or new file must be documented in `CHANGELOG.md`, with the version number, the files touched, and a technical explanation of the change.

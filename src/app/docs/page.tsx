@@ -227,11 +227,11 @@ export default function DocsPage() {
               <div className="space-y-2 font-mono text-xs">
                 <div className="border border-hairline bg-background/80 p-3 text-foreground/80">
                   <span className="text-indigo font-bold">&gt; Prompt: </span>
-                  &quot;Service malas tadi crash 20 menit karena memory leak, tolong catat insidennya.&quot;
+                  &quot;The malas service just crashed for 20 minutes because of a memory leak, please log the incident.&quot;
                 </div>
                 <div className="border border-hairline bg-background/80 p-3 text-foreground/80">
                   <span className="text-indigo font-bold">&gt; Prompt: </span>
-                  &quot;Besok jam 2 pagi ada maintenance restart homelab buat pasang RAM 30 menit. Masukkan ke status page.&quot;
+                  &quot;Tomorrow at 2 AM there is a 30-minute homelab restart for installing RAM. Add it to the status page.&quot;
                 </div>
                 <div className="border border-hairline bg-background/80 p-3 text-foreground/80">
                   <span className="text-indigo font-bold">&gt; Prompt: </span>
