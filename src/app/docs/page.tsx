@@ -129,9 +129,13 @@ export default function DocsPage() {
                   </td>
                   <td className="p-4 text-foreground/60">Browser digital reader engine (manga, novels, EPUB, and PDF)</td>
                   <td className="p-4">
-                    <span className="border border-indigo/30 bg-indigo-soft px-2 py-0.5 font-mono text-[11px] text-indigo">Development</span>
+                    <span className="border border-emerald/30 bg-emerald-soft px-2 py-0.5 font-mono text-[11px] text-emerald">Production</span>
                   </td>
-                  <td className="p-4 font-mono text-foreground/40">samsmon/pore.js</td>
+                  <td className="p-4">
+                    <a href="https://github.com/samsmon/pore-js" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-foreground/50 hover:text-foreground">
+                      samsmon/pore-js <ExternalLink className="h-3 w-3" strokeWidth={1.5} />
+                    </a>
+                  </td>
                 </tr>
               </tbody>
             </table>

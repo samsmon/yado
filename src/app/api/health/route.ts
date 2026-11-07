@@ -24,14 +24,12 @@ async function ping(url: string | undefined, timeoutMs = 4000): Promise<{ status
 export async function GET() {
   const requestStarted = Date.now();
 
-  const [sso, malas, libs] = await Promise.all([
+  const [sso, malas, libs, pore] = await Promise.all([
     ping(process.env.SSO_HEALTH_URL),
     ping(process.env.MALAS_HEALTH_URL),
     ping(process.env.LIBS_HEALTH_URL),
+    ping(process.env.PORE_HEALTH_URL ?? "https://pore.yado.my.id"),
   ]);
-
-  // pore has no deployed backend yet (see services.ts) - nothing to probe.
-  const pore = { status: "unknown" as Status, latencyMs: null };
 
   // telemetry (this app) and gateway (the edge ingress that routed this
   // request) are self-evidently up if this handler is running at all -

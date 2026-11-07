@@ -73,16 +73,17 @@ export const services: ServiceDef[] = [
     tagline: "Viewer & Inspector",
     description:
       "Digital reading engine and visual inspector for manga, EPUB, and signal archives.",
-    url: "#",
-    repo: "https://github.com/samsmon/yado",
+    url: "https://pore.yado.my.id",
+    repo: "https://github.com/samsmon/pore-js",
     category: "Reader",
-    lifecycle: "development",
-    version: "v0.4.0-alpha",
-    progress: 70,
+    lifecycle: "production",
+    version: "v1.0.0-rc.3",
+    progress: 100,
     iconName: "BookOpen",
     quickLinks: [
+      { label: "Launch", url: "https://pore.yado.my.id" },
       { label: "Docs", url: "/docs" },
-      { label: "Roadmap", url: "https://github.com/samsmon/yado/tree/main/docs" },
+      { label: "Repo", url: "https://github.com/samsmon/pore-js" },
     ],
   },
   {
